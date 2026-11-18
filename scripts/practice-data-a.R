@@ -106,7 +106,12 @@ data |>
 non_missing_data <- data |>
   filter(if_all(c(y_cost, hdl, crp,hba1c), ~ !is.na(.x)))
 # Number with complete data in all four laboratory values:3972
-# Total number ofparticipants: 4700
+# Total number of participants: 4700
+# you can use the above appoeach for other filter conditions, not just dropping nulls
+
+# using drop_na() instead of using complex functions
+# data |> 
+#   drop_na(y_cost, hdl, crp,hba1c)
 
 percentage <- (n_distinct(non_missing_data) / n_distinct(data)) * 100
 # percentage: 84.51064

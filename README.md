@@ -12,7 +12,7 @@ Bridging clinical workflows and quantitative analytics. A public portfolio docum
 │   ├── processed/    # Analysis-ready data
 │   └── external/     # Data from external sources
 ├── notebooks/        # Exploratory notebooks
-├── R/                # Reusable R scripts and functions
+├── scripts/          # Reusable R scripts and functions
 ├── python/           # Reusable Python modules and scripts
 ├── sql/              # SQL queries and transformations
 ├── reports/          # Reports and rendered outputs
